@@ -13,33 +13,29 @@ import java.util.List;
 public class RecyclerViewActivity extends AppCompatActivity {
 
 
-    RecyclerView recyclerView;
-    ExampleAdapter exampleAdapter;
     ArrayList<ExampleItemVerticle> list;
-
+    ExampleAdapter adapter;
+    RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recyclerView);
         list = new ArrayList<>();
-        list.add(new ExampleItemVerticle("false","samsung","red","j2","screenBroken","1"));
-        list.add(new ExampleItemVerticle("true","realme one","black","realme one","Broken","2"));
-        list.add(new ExampleItemVerticle("false","samsung","red","j2","screenBroken","1"));
-        list.add(new ExampleItemVerticle("true","realme one","black","realme one","Broken","2"));
-        list.add(new ExampleItemVerticle("false","samsung","red","j2","screenBroken","1"));
-        list.add(new ExampleItemVerticle("true","realme one","black","realme one","Broken","2"));
-        list.add(new ExampleItemVerticle("false","samsung","red","j2","screenBroken","1"));
-        list.add(new ExampleItemVerticle("true","realme one","black","realme one","Broken","2"));
-        list.add(new ExampleItemVerticle("false","samsung","red","j2","screenBroken","1"));
-        list.add(new ExampleItemVerticle("true","realme one","black","realme one","Broken","2"));
-        list.add(new ExampleItemVerticle("false","samsung","red","j2","screenBroken","1"));
-        list.add(new ExampleItemVerticle("true","realme one","black","realme one","Broken","2"));
 
-        exampleAdapter = new ExampleAdapter(this, list);
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","1"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","2"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","3"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","4"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","5"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","6"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","7"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","6"));
+        list.add(new ExampleItemVerticle("true","samsung","red","a2","screen broken","7"));
+
+        recyclerView = findViewById(R.id.recyclerView);
+        adapter = new ExampleAdapter(RecyclerViewActivity.this,list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
-        recyclerView.setAdapter(exampleAdapter);
-
+        recyclerView.setAdapter(adapter);
     }
 }

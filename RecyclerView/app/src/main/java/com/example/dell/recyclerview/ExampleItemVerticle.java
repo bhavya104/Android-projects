@@ -60,3 +60,5 @@ public class ExampleItemVerticle {
         this.id = id;
     }
 }
+
+

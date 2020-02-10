@@ -23,87 +23,89 @@
         <com.balysv.materialripple.MaterialRippleLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="252dp"
-            android:layout_height="175dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="252dp"
                 android:layout_height="wrap_content"
-                android:text="Dutch"
-                android:textColor="#2E3691"
-                android:textSize="22sp"
-                android:visibility="gone"
-                tools:layout_editor_absoluteX="157dp"
-                tools:layout_editor_absoluteY="40dp" />
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
 
-            <TextView
-                android:id="@+id/textView222"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="IDR 80.000"
-                android:textColor="#F6C128"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="140dp" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dutch"
+                    android:textColor="#2E3691"
+                    android:textSize="22sp"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="157dp"
+                    tools:layout_editor_absoluteY="40dp" />
 
-            <TextView
-                android:id="@+id/textView333"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="IDR 80.000"
-                android:textColor="#F6C128"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="140dp" />
+                <TextView
+                    android:id="@+id/textView222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="IDR 80.000"
+                    android:textColor="#F6C128"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="146dp"
+                    tools:layout_editor_absoluteY="140dp" />
 
-            <TextView
-                android:id="@+id/textView444"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="IDR 80.000"
-                android:textColor="#F6C128"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="140dp" />
+                <TextView
+                    android:id="@+id/textView333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="IDR 80.000"
+                    android:textColor="#F6C128"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="146dp"
+                    tools:layout_editor_absoluteY="140dp" />
+
+                <TextView
+                    android:id="@+id/textView444"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="IDR 80.000"
+                    android:textColor="#F6C128"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="146dp"
+                    tools:layout_editor_absoluteY="140dp" />
 
 
-            <TextView
-                android:id="@+id/textView555"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="IDR 80.000"
-                android:textColor="#F6C128"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="140dp" />
+                <TextView
+                    android:id="@+id/textView555"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="IDR 80.000"
+                    android:textColor="#F6C128"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="146dp"
+                    tools:layout_editor_absoluteY="140dp" />
 
-            <TextView
-                android:id="@+id/textView666"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:lines="2"
-                android:text="IDR 80.000"
-                android:textColor="#F6C128"
-                android:textSize="18sp"
-                tools:layout_editor_absoluteX="146dp"
-                tools:layout_editor_absoluteY="140dp" />
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/textView666"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:lines="2"
+                    android:text="IDR 80.000"
+                    android:textColor="#F6C128"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="146dp"
+                    tools:layout_editor_absoluteY="140dp" />
+            </LinearLayout>
         </com.balysv.materialripple.MaterialRippleLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
