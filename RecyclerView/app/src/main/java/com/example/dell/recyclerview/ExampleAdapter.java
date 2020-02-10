@@ -13,38 +13,32 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 // playlist adapter
-public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleViewHolder> {
+public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.Bhooshan> {
 
-    private Context mContext;
-    private ArrayList<ExampleItemVerticle> mExampleList;
+    Context mContext;
+    ArrayList<ExampleItemVerticle> mExampleList;
 
-    public ExampleAdapter(Context context, ArrayList<ExampleItemVerticle> exampleList){
-        mContext = context;
-        mExampleList = exampleList;
+    public ExampleAdapter(Context mContext, ArrayList<ExampleItemVerticle> mExampleList) {
+        this.mContext = mContext;
+        this.mExampleList = mExampleList;
     }
-
 
     @NonNull
     @Override
-    public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
+    public Bhooshan onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(mContext).inflate(R.layout.item_product_verticle,parent,false);
-        return new ExampleViewHolder(v);
+        return new Bhooshan(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ExampleViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull Bhooshan bhooshan, int position) {
         ExampleItemVerticle currentItem = mExampleList.get(position);
-        String completed = currentItem.getCompleted();
-        String brand = currentItem.getBrand();
-        String model = currentItem.getModel();
-        String color = currentItem.getColor();
-        String defect = currentItem.getDefect();
+        bhooshan.completed.setText(currentItem.getCompleted());
+        bhooshan.model.setText(currentItem.getModel());
+        bhooshan.defect.setText(currentItem.getDefect());
+        bhooshan.color.setText(currentItem.getColor());
+        bhooshan.brand.setText(currentItem.getBrand());
 
-        holder.completed.setText(completed);
-        holder.model.setText(model);
-        holder.brand.setText(brand);
-        holder.color.setText(color);
-        holder.defect.setText(defect);
     }
 
     @Override
@@ -53,18 +47,17 @@ public class ExampleAdapter extends RecyclerView.Adapter<ExampleAdapter.ExampleV
     }
 
 
-    public class ExampleViewHolder extends RecyclerView.ViewHolder{
+    public class Bhooshan extends RecyclerView.ViewHolder{
 
-
-        public TextView completed,model,brand,color,defect;
-        public View view;
-        public ExampleViewHolder(@NonNull View itemView) {
-            super(itemView);
-            completed = itemView.findViewById(R.id.textView222);
-            model = itemView.findViewById(R.id.textView333);
-            brand = itemView.findViewById(R.id.textView444);
-            color = itemView.findViewById(R.id.textView555);
-            defect = itemView.findViewById(R.id.textView666);
+       public TextView completed,brand,color,defect,model,id;
+        public Bhooshan(@NonNull View view) {
+            super(view);
+            completed = view.findViewById(R.id.textView222);
+            model = view.findViewById(R.id.textView333);
+            brand = view.findViewById(R.id.textView555);
+            color = view.findViewById(R.id.textView666);
+            defect = view.findViewById(R.id.textView444);
         }
     }
+
 }
