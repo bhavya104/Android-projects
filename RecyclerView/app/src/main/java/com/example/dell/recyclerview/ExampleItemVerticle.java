@@ -12,6 +12,14 @@ public class ExampleItemVerticle {
         this.id = id;
     }
 
+    public ExampleItemVerticle(String completed, String brand, String color, String model, String defect) {
+        this.completed = completed;
+        this.brand = brand;
+        this.color = color;
+        this.model = model;
+        this.defect = defect;
+    }
+
     public String getCompleted() {
         return completed;
     }
