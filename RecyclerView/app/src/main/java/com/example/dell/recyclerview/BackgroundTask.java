@@ -15,7 +15,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
 import com.example.dell.recyclerview.database.OrderDbHelper;
 
 import org.json.JSONArray;
@@ -32,7 +31,7 @@ public class BackgroundTask extends AsyncTask<Void, Void, Void> {
     RequestQueue requestQueue;
     ExampleAdapter adapter;
     Activity activity;
-    String ordermeapi = "https://samarth-rare-app.herokuapp.com/orders/me";
+    String ordermeapi = "https://samarth-rare-app.herokuapp.com/orders";
 
     public BackgroundTask(Context context) {
         this.context = context;
@@ -41,7 +40,7 @@ public class BackgroundTask extends AsyncTask<Void, Void, Void> {
 
     @Override
     protected Void doInBackground(Void... voids) {
-            Toast.makeText(context, "yes", Toast.LENGTH_SHORT).show();
+
             StringRequest stringRequest = new StringRequest(Request.Method.GET, ordermeapi, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
@@ -62,7 +61,7 @@ public class BackgroundTask extends AsyncTask<Void, Void, Void> {
                             String defects = jsonObject.getString("phoneDefects");
                             String id = jsonObject.getString("_id");
                             orderDbHelper.putInfromation(completed, brand, model, color, defects, id, db);
-                            Toast.makeText(context, "yes", Toast.LENGTH_SHORT).show();
+
                         }
 
                         orderDbHelper.close();
@@ -79,14 +78,7 @@ public class BackgroundTask extends AsyncTask<Void, Void, Void> {
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }) {
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    HashMap<String, String> headers = new HashMap<>();
-                    headers.put("Authorization", "Bearer " + "");
-                    return headers;
-                }
-            };
+            });
 
 
             requestQueue = Volley.newRequestQueue(context);
