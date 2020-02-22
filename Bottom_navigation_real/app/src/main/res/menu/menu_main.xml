@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dell.bottom_navigation_real.MainActivity">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_action_home"
+        android:orderInCategory="100"
+        android:title="@string/nav_home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_action_account"
+        android:orderInCategory="101"
+        android:title="@string/nav_account" />
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/ic_action_cart"
+        android:orderInCategory="102"
+        android:title="@string/nav_cart" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/ic_action_notify"
+        android:orderInCategory="103"
+        android:title="@string/nav_notify" />
+</menu>
