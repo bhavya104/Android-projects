@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyGoogleSearchView</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="query_suggestion">
+        <item>samarth</item>
+        <item>arpit</item>
+        <item>parveen</item>
+        <item>sanchit</item>
+        <item>raghav</item>
+        <item>sanchit</item>
+        <item>raghav</item>
+    </string-array>
+</resources>
