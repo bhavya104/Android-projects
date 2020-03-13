@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "208480691030",
+    "firebase_url": "https://messagingapplication-c1849.firebaseio.com",
+    "project_id": "messagingapplication-c1849",
+    "storage_bucket": "messagingapplication-c1849.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208480691030:android:2e590e14fcf437ef1e6cf7",
+        "android_client_info": {
+          "package_name": "com.example.dell.messagingapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208480691030-2tbq0eae0an24117nnchktn3him11m90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dell.messagingapplication",
+            "certificate_hash": "8ce83b15899275045b9816d3b4654d4613db6346"
+          }
+        },
+        {
+          "client_id": "208480691030-1p43i50njtovdqn838ssq538nfpgj8kp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvygdQ8CKrK_529saIEgF4AhGAgoPayy0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208480691030-1p43i50njtovdqn838ssq538nfpgj8kp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
